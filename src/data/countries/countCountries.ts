@@ -1,20 +1,20 @@
-export const countCountries = {
-    labels: ['Россия', 'Казахстан', 'Узбекистан'],
-    datasets: [
-        {
-            label: 'Проданных пицц:',
-            data: [168, 118, 50],
-            backgroundColor: [
-                'rgb(157,18,26)',
-                'rgb(249,166,32)',
-                'rgb(71,68,68)',
-            ],
-            borderColor: [
-                'rgb(157,18,26)',
-                'rgb(249,166,32)',
-                'rgb(71,68,68)',
-            ],
-            borderWidth: 1,
-        },
-    ],
-};
+export const countCountries = [
+    {
+        "id": "Россия",
+        "label": "Россия",
+        "value": 168,
+        "color": "hsl(357,79%,34%)"
+    },
+    {
+        "id": "Казахстан",
+        "label": "Казахстан",
+        "value": 118,
+        "color": "hsl(37,95%,55%)"
+    },
+    {
+        "id": "Узбекистан",
+        "label": "Узбекистан",
+        "value": 50,
+        "color": "hsl(0,3%,15%)"
+    },
+]

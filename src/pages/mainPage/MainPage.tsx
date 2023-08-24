@@ -1,4 +1,4 @@
-import {Graph} from '../../components/mainPage/graph/Graph'
+import {GraphCountres} from '../../components/mainPage/graph/GraphCountres'
 
 import {countCountries} from "../../data/countries/countCountries";
 import {revenueCountries} from "../../data/countries/revenueCountries";
@@ -8,6 +8,7 @@ import {revenueCities} from "../../data/cities/revenueCities";
 import toggleIcon from '../../image/controlBlock/toggle-left.svg';
 
 import styles from './MainPage.module.scss'
+import {GraphCities} from "../../components/mainPage/graph/GraphCities";
 
 export function MainPage() {
     return <div className={styles.container}>
@@ -26,10 +27,10 @@ export function MainPage() {
             <div className={styles.container__line}></div>
         </div>
        <div className={styles.container__graph}>
-           <Graph data={countCountries} title={'Страны'} />
-           <Graph data={countCities} title={'Города'} />
-           <Graph data={revenueCountries} title={'Страны'} />
-           <Graph data={revenueCities} title={'Города'} />
+           <GraphCountres data={countCountries} />
+           <GraphCities data={countCities} />
+           <GraphCountres data={revenueCountries} />
+           <GraphCities data={revenueCities} />
        </div>
     </div>
 }

@@ -1,20 +1,20 @@
-export const revenueCountries = {
-    labels: ['Россия', 'Казахстан', 'Узбекистан'],
-    datasets: [
+export const revenueCountries = [
         {
-            label: 'Выручка с пицц:',
-            data: [65000000, 45500000, 19500000],
-            backgroundColor: [
-                'rgb(157,18,26)',
-                'rgb(249,166,32)',
-                'rgb(71,68,68)',
-            ],
-            borderColor: [
-                'rgb(157,18,26)',
-                'rgb(249,166,32)',
-                'rgb(71,68,68)',
-            ],
-            borderWidth: 1,
+            "id": "Россия",
+            "label": "Россия",
+            "value": 65000000,
+            "color": "hsl(357,79%,34%)"
         },
-    ],
-};
+        {
+            "id": "Казахстан",
+            "label": "Казахстан",
+            "value": 45500000,
+            "color": "hsl(37,95%,55%)"
+        },
+        {
+            "id": "Узбекистан",
+            "label": "Узбекистан",
+            "value": 19500000,
+            "color": "hsl(0,3%,15%)"
+        },
+]
