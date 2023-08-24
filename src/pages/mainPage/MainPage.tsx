@@ -1,4 +1,4 @@
-import {GraphCountres} from '../../components/mainPage/graph/GraphCountres'
+import {GraphCountries} from '../../components/mainPage/graph/GraphCountries'
 
 import {countCountries} from "../../data/countries/countCountries";
 import {revenueCountries} from "../../data/countries/revenueCountries";
@@ -27,9 +27,9 @@ export function MainPage() {
             <div className={styles.container__line}></div>
         </div>
        <div className={styles.container__graph}>
-           <GraphCountres data={countCountries} title={'335'} text={'шт.'} count={true} />
+           <GraphCountries data={countCountries} title={'335'} text={'шт.'} count={true} />
            <GraphCities data={countCities} title={'1065'} text={'шт.'} count={true}/>
-           <GraphCountres data={revenueCountries}  title={'$ 130'} text={'млн.'} count={false} />
+           <GraphCountries data={revenueCountries}  title={'$ 130'} text={'млн.'} count={false} />
            <GraphCities data={revenueCities} title={'$ 130'} text={'млн.'} count={false}/>
        </div>
     </div>
