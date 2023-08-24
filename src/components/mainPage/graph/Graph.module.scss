@@ -19,3 +19,32 @@
   font-weight: 500;
   line-height: 22px;
 }
+
+.container__legend {
+  min-width: 183px;
+
+  text-align: center;
+
+  position: absolute;
+
+  margin-top: 84px;
+  margin-left: 9px;
+}
+
+.container__legendFirstCount {
+  text-align: center;
+
+  position: absolute;
+
+  margin-top: 84px;
+  margin-left: 73px;
+}
+
+.container__legendSecondCount {
+  text-align: center;
+
+  position: absolute;
+
+  margin-top: 84px;
+  margin-left: 66px;
+}

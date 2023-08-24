@@ -1,10 +1,15 @@
 import { ResponsivePie } from '@nivo/pie'
 
 import styles from './Graph.module.scss'
-export function GraphCountres({data} : {data : any}) {
+export function GraphCountres({data, title, text, count} : {data : any, title : string, text : string, count : boolean}) {
 
     return <div className={styles.container}>
         <h3 className={styles.container__title}>Страны</h3>
+
+        <div className={count ? styles.container__legendFirstCount : styles.container__legend}>
+            <h1>{title}</h1>
+            <p>{text}</p>
+        </div>
 
         <ResponsivePie
             data={data}

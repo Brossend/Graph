@@ -27,10 +27,10 @@ export function MainPage() {
             <div className={styles.container__line}></div>
         </div>
        <div className={styles.container__graph}>
-           <GraphCountres data={countCountries} />
-           <GraphCities data={countCities} />
-           <GraphCountres data={revenueCountries} />
-           <GraphCities data={revenueCities} />
+           <GraphCountres data={countCountries} title={'335'} text={'шт.'} count={true} />
+           <GraphCities data={countCities} title={'1065'} text={'шт.'} count={true}/>
+           <GraphCountres data={revenueCountries}  title={'$ 130'} text={'млн.'} count={false} />
+           <GraphCities data={revenueCities} title={'$ 130'} text={'млн.'} count={false}/>
        </div>
     </div>
 }
